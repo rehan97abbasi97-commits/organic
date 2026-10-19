@@ -7,6 +7,7 @@ import Header from './components/common/Header.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import MainLayout from './components/common/MainLayout.jsx'
 import Home from './components/pages/Home.jsx'
+import AboutUs from './components/pages/AboutUs.jsx'
 
 createRoot(document.getElementById('root')).render(
   
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')).render(
         <Route element={<MainLayout />}  >
 
           <Route path='/' element={<Home />} />
+          <Route path='about-us' element={<AboutUs />} />
 
 
 
